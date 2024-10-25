@@ -1,29 +1,37 @@
-import logo from './Logo.svg'
-import cart from './Cart.svg'
-import src from './Search.svg'
+import logo from './picture/Logo.svg'
+import cart from './picture/Cart.svg'
+import src from '../src/picture/Search.svg'
+import bg_2 from '../src/picture/bg_2.svg'
 import './App.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={cart} className="App-cart" alt="cart" />
-        <img src={src} className="App-search" alt="src" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="header">
+        <img src={logo} alt="logo" />
+        <p>Organik</p>
+        <ul className='heaven'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>About</a></li>
+          <li><a href='#'>Pages</a></li>
+          <li><a href='#'>Shop</a></li>
+          <li><a href='#'>Project</a></li>
+          <li><a href='#'>News</a></li>
+        </ul>
+        <div className='input'>
+          <input type='text' />
+          <img src={src} className="App-search" alt="src" />
+        </div>
+        <div>
+          <img src={cart} className="App-cart" alt="cart" />
+          <p>cart(0)</p>
+        </div>
     </div>
+    <div>
+      <img src={bg_2} alt="bg2"/>
+    </div>
+    </> 
   );
 }
 
